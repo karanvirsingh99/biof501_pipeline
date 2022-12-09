@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+gwas         1              1              1
+total        2              1              1
+
+Select jobs to execute...
+
+[Thu Dec  8 17:10:36 2022]
+rule gwas:
+    input: results/LDSCoutput.RData, results/Sumstats.RData
+    output: results/outputGWAS.RData, results/non_BMI_AN.txt
+    jobid: 1
+    reason: Missing output files: results/non_BMI_AN.txt
+    resources: tmpdir=/var/folders/7g/7qjhbx4d0975c50_s8v74pw00000gn/T
+
+[Thu Dec  8 17:28:59 2022]
+Error in rule gwas:
+    jobid: 1
+    input: results/LDSCoutput.RData, results/Sumstats.RData
+    output: results/outputGWAS.RData, results/non_BMI_AN.txt
+
+RuleException:
+CalledProcessError in line 46 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Command 'set -euo pipefail;  Rscript --vanilla /Users/karanvir/Desktop/biof501_pipeline/.snakemake/scripts/tmpyp_1nb0_.gwas.R' returned non-zero exit status 1.
+  File "/Users/karanvir/Desktop/biof501_pipeline/Snakefile", line 46, in __rule_gwas
+  File "/Users/karanvir/opt/anaconda3/envs/snakemake/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-12-08T171036.333859.snakemake.log

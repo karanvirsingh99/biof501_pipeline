@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule sumstats  in line 28 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Missing input files for rule sumstats:
+    output: results/AN_BMI_sumstats.log, results/Sumstats.RData
+    affected files:
+        data/summary_stats/BMI.subset.tsv.gz

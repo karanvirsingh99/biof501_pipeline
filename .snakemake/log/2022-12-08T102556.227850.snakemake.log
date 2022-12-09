@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule munge_and_ldsc  in line 1 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Missing input files for rule munge_and_ldsc:
+    output: results/LDSCoutput.RData, results/AN.sumstats.gz, results/BMI.sumstats.gz, results/BMI_munge.log, results/AN_munge.log
+    affected files:
+        data/summary_stats/pgcAN2.2019-07.vcf.tsv.gz

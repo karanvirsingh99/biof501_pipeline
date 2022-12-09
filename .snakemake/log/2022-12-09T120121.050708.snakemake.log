@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+gwas             1              1              1
+manhattan        1              1              1
+total            3              1              1
+
+Select jobs to execute...
+
+[Fri Dec  9 12:01:21 2022]
+rule gwas:
+    input: results/LDSCoutput.RData, results/Sumstats.RData
+    output: results/outputGWAS.RData
+    jobid: 2
+    reason: Missing output files: results/outputGWAS.RData
+    resources: tmpdir=/var/folders/7g/7qjhbx4d0975c50_s8v74pw00000gn/T
+
+[Fri Dec  9 12:35:29 2022]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Fri Dec  9 12:35:29 2022]
+rule manhattan:
+    input: results/outputGWAS.RData
+    output: results/non_BMI_AN_manhattan_CHR3.pdf
+    jobid: 1
+    reason: Missing output files: results/non_BMI_AN_manhattan_CHR3.pdf; Input files updated by another job: results/outputGWAS.RData
+    resources: tmpdir=/var/folders/7g/7qjhbx4d0975c50_s8v74pw00000gn/T
+
+[Fri Dec  9 12:35:30 2022]
+Error in rule manhattan:
+    jobid: 1
+    input: results/outputGWAS.RData
+    output: results/non_BMI_AN_manhattan_CHR3.pdf
+
+RuleException:
+CalledProcessError in line 53 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Command 'set -euo pipefail;  Rscript --vanilla /Users/karanvir/Desktop/biof501_pipeline/.snakemake/scripts/tmp7hiuvwdy.manhattan_plot.R' returned non-zero exit status 1.
+  File "/Users/karanvir/Desktop/biof501_pipeline/Snakefile", line 53, in __rule_manhattan
+  File "/Users/karanvir/opt/anaconda3/envs/snakemake/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+Removing output files of failed job manhattan since they might be corrupted:
+results/non_BMI_AN_manhattan_CHR3.pdf
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-12-09T120121.050708.snakemake.log

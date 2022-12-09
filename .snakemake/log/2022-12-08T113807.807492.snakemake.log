@@ -1,0 +1,2 @@
+SyntaxError in line 19 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Expecting rule keyword, comment or docstrings inside a rule definition. (Snakefile, line 19)

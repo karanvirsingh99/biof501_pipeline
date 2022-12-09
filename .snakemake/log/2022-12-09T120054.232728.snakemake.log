@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule manhattan  in line 47 of /Users/karanvir/Desktop/biof501_pipeline/Snakefile:
+Missing input files for rule manhattan:
+    output: results/non_BMI_AN_manhattan_CHR3.pdf
+    affected files:
+        results/outputGWAS.Rdata

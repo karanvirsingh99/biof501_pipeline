@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job               count    min threads    max threads
+--------------  -------  -------------  -------------
+munge_and_ldsc        1              1              1
+sumstats              1              1              1
+total                 2              1              1
+
+Select jobs to execute...
+
+[Thu Dec  8 11:08:46 2022]
+rule munge_and_ldsc:
+    input: data/summary_stats/AN_summary_stats_A1_A2.tsv.gz, data/summary_stats/SNP_gwas_mc_merge_nogc.tbl.uniq.gz
+    output: results/LDSCoutput.RData, results/AN.sumstats.gz, results/BMI.sumstats.gz, results/BMI_munge.log, results/AN_munge.log
+    jobid: 0
+    reason: Missing output files: results/BMI.sumstats.gz, results/BMI_munge.log, results/LDSCoutput.RData, results/AN_munge.log, results/AN.sumstats.gz
+    resources: tmpdir=/var/folders/7g/7qjhbx4d0975c50_s8v74pw00000gn/T
+
+[Thu Dec  8 11:12:36 2022]
+Finished job 0.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Dec  8 11:12:36 2022]
+rule sumstats:
+    input: data/summary_stats/AN_summary_stats_A1_A2.tsv.gz, data/summary_stats/SNP_gwas_mc_merge_nogc.tbl.uniq.gz
+    output: results/AN_BMI_sumstats.log, results/Sumstats.RData
+    jobid: 1
+    reason: Forced execution
+    resources: tmpdir=/var/folders/7g/7qjhbx4d0975c50_s8v74pw00000gn/T
+
+[Thu Dec  8 11:17:20 2022]
+Finished job 1.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2022-12-08T110845.961825.snakemake.log
