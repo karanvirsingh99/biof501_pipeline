@@ -161,11 +161,36 @@ This is the final expected output for the pipeline, a manhattan plot for all SNP
 
 ![](images/Screen%20Shot%202022-12-09%20at%2012.40.39%20PM.png)
 
-## Next steps
+## Directory
 
-Results from this pipeline can be further investigated. Significant hits identified in chromosome 3 can be fine-mapped using tools like [plink](https://www.cog-genomics.org/plink/2.0/) to identify the most likely causal variants. Functional mapping using colocalization with known QTLs can also be used to determine the effect of SNPs in non-coding regions, as well as to identify associated target genes.
+This is what your directory should look like
 
-	<h1>Directory Tree</h1><p>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="Author" content="Made by 'tree'">
+ <meta name="GENERATOR" content="$Version: $ tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
+ <title>Directory Tree</title>
+ <style type="text/css">
+  BODY { font-family : monospace, sans-serif;  color: black;}
+  P { font-family : monospace, sans-serif; color: black; margin:0px; padding: 0px;}
+  A:visited { text-decoration : none; margin : 0px; padding : 0px;}
+  A:link    { text-decoration : none; margin : 0px; padding : 0px;}
+  A:hover   { text-decoration: underline; background-color : yellow; margin : 0px; padding : 0px;}
+  A:active  { margin : 0px; padding : 0px;}
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  }
+  .FIFO  { color: purple; }
+  .CHAR  { color: yellow; }
+  .DIR   { color: blue;   }
+  .BLOCK { color: yellow; }
+  .LINK  { color: aqua;   }
+  .SOCK  { color: fuchsia;}
+  .EXEC  { color: green;  }
+ </style>
+</head>
+<body>
+	<p>
 	<a href=".">.</a><br>
 	├── <a href="./README.md">README.md</a><br>
 	├── <a href="./Snakefile">Snakefile</a><br>
@@ -252,6 +277,11 @@ Results from this pipeline can be further investigated. Significant hits identif
 	&nbsp;&nbsp;&nbsp; ├── <a href="./scripts/munge_and_ldsc.R">munge_and_ldsc.R</a><br>
 	&nbsp;&nbsp;&nbsp; └── <a href="./scripts/sumstats.R">sumstats.R</a><br>
 <br><br><p>
+	
+## Next steps
+
+Results from this pipeline can be further investigated. Significant hits identified in chromosome 3 can be fine-mapped using tools like [plink](https://www.cog-genomics.org/plink/2.0/) to identify the most likely causal variants. Functional mapping using colocalization with known QTLs can also be used to determine the effect of SNPs in non-coding regions, as well as to identify associated target genes.
+
 
 ## References
 
