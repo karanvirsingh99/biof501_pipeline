@@ -75,13 +75,13 @@ conda deactivate
 To access the workflow, clone this repository to your computer by running:
 
 ``` sh
-git clone REPO WEBSITE
+git clone git@github.com:karanvirsingh99/biof501_pipeline.git
 ```
 
 Navigate to the project directory (change the project directory to where you cloned the repository)
 
 ``` sh
-cd PROJECT_DIRECTORY
+cd biof501_pipeline
 ```
 
 The repository contains an environment.yml file which mamba can use to install all dependencies the pipeline needs to run. You can run the following command to build this environment, which will be named biof501_pipeline.
