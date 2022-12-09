@@ -1,4 +1,4 @@
-Snakemake workflow: GWAS-by-subtraction
+# Snakemake workflow: GWAS-by-subtraction
 
 ### By: Karanvir Singh (Dennis Lab)
 
@@ -165,6 +165,119 @@ This is the final expected output for the pipeline, a manhattan plot for all SNP
 
 Results from this pipeline can be further investigated. Significant hits identified in chromosome 3 can be fine-mapped using tools like [plink](https://www.cog-genomics.org/plink/2.0/) to identify the most likely causal variants. Functional mapping using colocalization with known QTLs can also be used to determine the effect of SNPs in non-coding regions, as well as to identify associated target genes.
 
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="Author" content="Made by 'tree'">
+ <meta name="GENERATOR" content="$Version: $ tree v2.0.4 (c) 1996 - 2022 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
+ <title>Directory Tree</title>
+ <style type="text/css">
+  BODY { font-family : monospace, sans-serif;  color: black;}
+  P { font-family : monospace, sans-serif; color: black; margin:0px; padding: 0px;}
+  A:visited { text-decoration : none; margin : 0px; padding : 0px;}
+  A:link    { text-decoration : none; margin : 0px; padding : 0px;}
+  A:hover   { text-decoration: underline; background-color : yellow; margin : 0px; padding : 0px;}
+  A:active  { margin : 0px; padding : 0px;}
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  }
+  .FIFO  { color: purple; }
+  .CHAR  { color: yellow; }
+  .DIR   { color: blue;   }
+  .BLOCK { color: yellow; }
+  .LINK  { color: aqua;   }
+  .SOCK  { color: fuchsia;}
+  .EXEC  { color: green;  }
+ </style>
+</head>
+<body>
+	<h1>Directory Tree</h1><p>
+	<a href=".">.</a><br>
+	├── <a href="./README.md">README.md</a><br>
+	├── <a href="./Snakefile">Snakefile</a><br>
+	├── <a href="./data/">data</a><br>
+	│   ├── <a href="./data/reference_genomes/">reference_genomes</a><br>
+	│   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/">eur_w_ld_chr</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/1.l2.M_5_50">1.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/1.l2.ldscore.gz">1.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/10.l2.M_5_50">10.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/10.l2.ldscore.gz">10.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/11.l2.M_5_50">11.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/11.l2.ldscore.gz">11.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/12.l2.M_5_50">12.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/12.l2.ldscore.gz">12.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/13.l2.M_5_50">13.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/13.l2.ldscore.gz">13.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/14.l2.M_5_50">14.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/14.l2.ldscore.gz">14.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/15.l2.M_5_50">15.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/15.l2.ldscore.gz">15.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/16.l2.M_5_50">16.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/16.l2.ldscore.gz">16.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/17.l2.M_5_50">17.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/17.l2.ldscore.gz">17.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/18.l2.M_5_50">18.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/18.l2.ldscore.gz">18.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/19.l2.M_5_50">19.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/19.l2.ldscore.gz">19.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/2.l2.M_5_50">2.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/2.l2.ldscore.gz">2.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/20.l2.M_5_50">20.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/20.l2.ldscore.gz">20.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/21.l2.M_5_50">21.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/21.l2.ldscore.gz">21.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/22.l2.M_5_50">22.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/22.l2.ldscore.gz">22.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/3.l2.M_5_50">3.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/3.l2.ldscore.gz">3.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/4.l2.M_5_50">4.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/4.l2.ldscore.gz">4.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/5.l2.M_5_50">5.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/5.l2.ldscore.gz">5.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/6.l2.M_5_50">6.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/6.l2.ldscore.gz">6.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/6_old.l2.M_5_50">6_old.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/6_old.l2.ldscore.gz">6_old.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/7.l2.M_5_50">7.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/7.l2.ldscore.gz">7.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/8.l2.M_5_50">8.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/8.l2.ldscore.gz">8.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/9.l2.M_5_50">9.l2.M_5_50</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/9.l2.ldscore.gz">9.l2.ldscore.gz</a><br>
+	│   │   │   ├── <a href="./data/reference_genomes/eur_w_ld_chr/README">README</a><br>
+	│   │   │   └── <a href="./data/reference_genomes/eur_w_ld_chr/w_hm3.snplist">w_hm3.snplist</a><br>
+	│   │   ├── <a href="./data/reference_genomes/reference.1000G.maf.0.005.txt.gz">reference.1000G.maf.0.005.txt.gz</a><br>
+	│   │   └── <a href="./data/reference_genomes/w_hm3.noMHC.snplist">w_hm3.noMHC.snplist</a><br>
+	│   └── <a href="./data/summary_stats/">summary_stats</a><br>
+	│   &nbsp;&nbsp;&nbsp; ├── <a href="./data/summary_stats/AN_subset.tsv.gz">AN_subset.tsv.gz</a><br>
+	│   &nbsp;&nbsp;&nbsp; ├── <a href="./data/summary_stats/BMI_subset.tsv.gz">BMI_subset.tsv.gz</a><br>
+	│   &nbsp;&nbsp;&nbsp; ├── <a href="./data/summary_stats/SNP_gwas_mc_merge_nogc.tbl.uniq.gz">SNP_gwas_mc_merge_nogc.tbl.uniq.gz</a><br>
+	│   &nbsp;&nbsp;&nbsp; ├── <a href="./data/summary_stats/an_gwas_cohorts.csv">an_gwas_cohorts.csv</a><br>
+	│   &nbsp;&nbsp;&nbsp; └── <a href="./data/summary_stats/pgcAN2.2019-07.vcf.tsv.gz">pgcAN2.2019-07.vcf.tsv.gz</a><br>
+	├── <a href="./environment.yml">environment.yml</a><br>
+	├── <a href="./get_files.sh">get_files.sh</a><br>
+	├── <a href="./images/">images</a><br>
+	│   ├── <a href="./images/GWAS%20by%20substraction-02.png">GWAS by substraction-02.png</a><br>
+	│   ├── <a href="./images/Screen%20Shot%202022-12-09%20at%2012.40.39%20PM.png">Screen Shot 2022-12-09 at 12.40.39 PM.png</a><br>
+	│   └── <a href="./images/Screen%20Shot%202022-12-09%20at%202.49.58%20PM.png">Screen Shot 2022-12-09 at 2.49.58 PM.png</a><br>
+	├── <a href="./results/">results</a><br>
+	│   ├── <a href="./results/AN.sumstats.gz">AN.sumstats.gz</a><br>
+	│   ├── <a href="./results/AN.sumstats.gz_BMI.sumstats.gz_ldsc.log">AN.sumstats.gz_BMI.sumstats.gz_ldsc.log</a><br>
+	│   ├── <a href="./results/AN_BMI_sumstats.log">AN_BMI_sumstats.log</a><br>
+	│   ├── <a href="./results/AN_munge.log">AN_munge.log</a><br>
+	│   ├── <a href="./results/BMI.sumstats.gz">BMI.sumstats.gz</a><br>
+	│   ├── <a href="./results/BMI_munge.log">BMI_munge.log</a><br>
+	│   ├── <a href="./results/LDSCoutput.RData">LDSCoutput.RData</a><br>
+	│   ├── <a href="./results/Sumstats.RData">Sumstats.RData</a><br>
+	│   ├── <a href="./results/non_BMI_AN_manhattan_CHR3.pdf">non_BMI_AN_manhattan_CHR3.pdf</a><br>
+	│   └── <a href="./results/outputGWAS.RData">outputGWAS.RData</a><br>
+	└── <a href="./scripts/">scripts</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="./scripts/clip_stats.R">clip_stats.R</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="./scripts/gwas.R">gwas.R</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="./scripts/manhattan_plot.R">manhattan_plot.R</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="./scripts/munge_and_ldsc.R">munge_and_ldsc.R</a><br>
+	&nbsp;&nbsp;&nbsp; └── <a href="./scripts/sumstats.R">sumstats.R</a><br>
+<br><br><p>
+
 ## References
 
 1.  van Eeden, A. E., van Hoeken, D. & Hoek, H. W. Incidence, prevalence and mortality of anorexia nervosa and bulimia nervosa. Curr. Opin. Psychiatry **34**, 515--524 (2021).
@@ -172,3 +285,4 @@ Results from this pipeline can be further investigated. Significant hits identif
 3.  Yilmaz, Z., Hardaway, J. A. & Bulik, C. M. Genetics and Epigenetics of Eating Disorders. Adv. Genomics Genet. **5**, 131--150 (2015).
 4.  Watson, H. J. et al. Genome-wide association study identifies eight risk loci and implicates metabo-psychiatric origins for anorexia nervosa. Nat. Genet. **51**, 1207--1214 (2019)
 5.  Demange, P. A. *et al.* Investigating the genetic architecture of noncognitive skills using GWAS-by-subtraction. *Nat Genet* **53**, 35--44 (2021).
+
