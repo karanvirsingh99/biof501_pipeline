@@ -166,7 +166,6 @@ This is the final expected output for the pipeline, a manhattan plot for all SNP
 Results from this pipeline can be further investigated. Significant hits identified in chromosome 3 can be fine-mapped using tools like [plink](https://www.cog-genomics.org/plink/2.0/) to identify the most likely causal variants. Functional mapping using colocalization with known QTLs can also be used to determine the effect of SNPs in non-coding regions, as well as to identify associated target genes.
 
 	<h1>Directory Tree</h1><p>
-	This is what your directory should look like after running the pipeline
 	<a href=".">.</a><br>
 	├── <a href="./README.md">README.md</a><br>
 	├── <a href="./Snakefile">Snakefile</a><br>
