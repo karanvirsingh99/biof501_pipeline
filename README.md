@@ -6,7 +6,7 @@
 
 # Project description
 
-This workflow fits a genomic structural equation model (GenomicSEM) using genome-wide association study (GWAS) summary statistics for anorexia nervosa ([Watson et. al](https://www.nature.com/articles/s41588-019-0439-2)) and BMI ([Locke et. al](https://www.nature.com/articles/nature14177)). The model regresses the effect of each variant identified in the GWASs on two latent variables - BMI and non-BMI. This multivariate effectively computes the effect size of genetic variants identified that are associated with anorexia independently of BMI.
+This workflow fits a genomic structural equation model (GenomicSEM) using genome-wide association study (GWAS) summary statistics for anorexia nervosa ([Watson et. al](https://www.nature.com/articles/s41588-019-0439-2)) and BMI ([Locke et. al](https://www.nature.com/articles/nature14177)). The model regresses the effect of each variant identified in the GWASs on two latent variables - BMI and non-BMI. This multivariate method effectively computes the effect size of genetic variants that are associated with anorexia independently of BMI.
 
 ## Overview
 
